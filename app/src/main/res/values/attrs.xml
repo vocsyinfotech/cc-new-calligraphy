@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="CropImageView">
+
+        <attr name="guidelines">
+            <enum name="off" value="0"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="on" value="2"/>
+        </attr>
+
+        <attr name="fixAspectRatio" format="boolean"/>
+        <attr name="aspectRatioX" format="integer"/>
+        <attr name="aspectRatioY" format="integer"/>
+        <attr name="imageResource" format="reference"/>
+    </declare-styleable>
+    <!--<declare-styleable name="CropImageView">-->
+
+        <!--<attr name="guidelines">-->
+            <!--<enum name="off" value="0"/>-->
+            <!--<enum name="onTouch" value="1"/>-->
+            <!--<enum name="on" value="2"/>-->
+        <!--</attr>-->
+
+        <!--<attr name="fixAspectRatio" format="boolean"/>-->
+        <!--<attr name="aspectRatioX" format="integer"/>-->
+        <!--<attr name="aspectRatioY" format="integer"/>-->
+
+    <!--</declare-styleable>-->
+
+</resources>

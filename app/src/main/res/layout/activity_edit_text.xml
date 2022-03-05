@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/rl_top">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/txt_top_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Edit Text"
+            android:textColor="@color/textcolor"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/verification" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_prv"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/output_android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Add Text"
+            android:textColor="#000"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_prv"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/rl_ok">
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:ems="10">
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/rl_clr">
+
+            <ImageButton
+                android:id="@+id/btn_ok"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ok_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_clr"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp">
+
+            <ImageButton
+                android:id="@+id/btn_clr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/textclr_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="2dp"
+        android:layout_above="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_edit">
+
+        <com.Example.textart.calligrapy.NonScrollListView
+            android:id="@+id/fontgrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:background="@color/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="visible" />
+
+
+
+</RelativeLayout>

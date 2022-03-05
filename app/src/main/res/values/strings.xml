@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Calligrapy</string>
+
+
+    <string name="ads_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ads_bnr">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ads_inter">ca-app-pub-3940256099942544/1033173712</string>
+
+
+    <string name="moreapp">Account+Name</string>
+
+
+    <string name="title_activity_edit_text">EditTextActivity</string>
+    <string name="title_activity_text">TextActivity</string>
+    <string name="sharemsg">\n Hey Frnds Download this app for writing calligraphy...\n\n</string>
+
+
+</resources>

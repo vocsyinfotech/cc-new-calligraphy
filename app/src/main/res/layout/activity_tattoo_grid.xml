@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/rl_top">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Tattoos"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top">
+
+        <GridView
+            android:id="@+id/tattooGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:horizontalSpacing="23dp"
+            android:numColumns="3"
+            android:scrollbars="horizontal"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_above="@+id/banner"
+        android:background="@color/rl_top"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/hlv_stickers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_sticker1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/cool_selector" />
+
+                <ImageButton
+                    android:id="@+id/btn_sticker2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/couple_selector" />
+
+                <ImageButton
+                    android:id="@+id/btn_sticker3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/dot_selector" />
+
+                <ImageButton
+                    android:id="@+id/btn_sticker4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/extra_selector" />
+
+                <ImageButton
+                    android:id="@+id/btn_sticker5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/feathers_selector" />
+
+                <ImageButton
+                    android:id="@+id/btn_sticker6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/heart_selector" />
+
+                <ImageButton
+                    android:id="@+id/btn_sticker7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/strock_selector" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="visible" />
+
+</RelativeLayout>

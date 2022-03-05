@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topheight"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/rl_top">
+
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/txt_top_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Crop Image"
+            android:textColor="@color/textcolor"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/flIImgEditor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner"
+        android:layout_below="@+id/topheight"
+        android:layout_gravity="center">
+
+        <com.Example.textart.calligrapy.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_above="@+id/rl_bottum"
+            android:layout_below="@+id/botms"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:background="@color/rl_top"
+            android:id="@+id/rl_bottum"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:weightSum="3.0">
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:layout_width="match_parent">
+
+                    <ImageButton
+                        android:background="@drawable/left_selector"
+                        android:id="@+id/btn_left"
+                        android:layout_centerInParent="true"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:layout_width="match_parent">
+
+                    <ImageButton
+                        android:background="@drawable/crop_selector"
+                        android:id="@+id/btn_next"
+                        android:layout_centerInParent="true"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:layout_width="match_parent">
+
+                    <ImageButton
+                        android:background="@drawable/right_selector"
+                        android:id="@+id/btn_right"
+                        android:layout_centerInParent="true"
+                        android:layout_height="40dp"
+                        android:layout_width="40dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
