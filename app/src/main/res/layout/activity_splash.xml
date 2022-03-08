@@ -2,25 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
-
+    android:background="@drawable/finalsplash">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:fontFamily="@font/roman"
         android:gravity="center"
         android:text="@string/app_name"
-        android:textColor="@color/white"
-        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <com.Example.textart.calligrapy.ScorpionDotsProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="visible"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
-        android:textColor="#000"
+        android:textColor="@color/white"
         android:textSize="55dp" />
 </RelativeLayout>

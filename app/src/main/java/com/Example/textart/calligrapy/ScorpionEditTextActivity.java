@@ -3,6 +3,7 @@ package com.Example.textart.calligrapy;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Editable;
@@ -18,6 +19,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.Example.textart.calligrapy.GoogleAds.GoogleAds;
+import com.Example.textart.calligrapy.GoogleAds.RandomAdListener;
+import com.Example.textart.calligrapy.GoogleAds.RandomBackAdListener;
 import com.flask.colorpicker.ColorPickerView.WHEEL_TYPE;
 import com.flask.colorpicker.OnColorSelectedListener;
 import com.flask.colorpicker.builder.ColorPickerClickListener;
@@ -54,24 +58,8 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
         getWindow().addFlags(128);
         getWindow().setFlags(1024, 1024);
         setContentView(R.layout.activity_edit_text);
-
-
-        if (ScorpionNetwork.isDataConnectionAvailable(getBaseContext())) {
-
-            RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.banner);
-            Banner(relativeLayout, ScorpionEditTextActivity.this);
-
-        }
-
         findById();
-        try {
 
-        } catch (Exception e) {
-        }
-        try {
-
-        } catch (Exception e2) {
-        }
         this.cnt_pos = 0;
         try {
             this.fontname = getImagefont("fontfile");
@@ -85,22 +73,28 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
         }
         this.adpt = new ScorpionCustomeFontAdapter(this, new ArrayList(Arrays.asList(this.fontname)));
         this.fontgrid.setAdapter(this.adpt);
+
+
         this.fontgrid.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapterView, View arg1, int arg2, long arg3) {
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionEditTextActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        if (!ScorpionUtils.arr.contains(arg2 + BuildConfig.FLAVOR)) {
+                            ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
+                            ScorpionEditTextActivity.this.typeface = Typeface.createFromAsset(ScorpionEditTextActivity.this.getAssets(), "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2]);
+                            ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
+                        } else if (Pattern.compile("([0-9])").matcher(ScorpionEditTextActivity.this.edittext.getText().toString()).find()) {
+                            Toast.makeText(ScorpionEditTextActivity.this.getApplicationContext(), "Please Select another font style!!!", Toast.LENGTH_LONG).show();
+                        } else {
+                            ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
+                            ScorpionEditTextActivity.this.typeface = Typeface.createFromAsset(ScorpionEditTextActivity.this.getAssets(), "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2]);
+                            ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
+                        }
+                        ScorpionEditTextActivity.this.cnt_pos = arg2;
+                    }
+                });
 
-
-                if (!ScorpionUtils.arr.contains(arg2 + BuildConfig.FLAVOR)) {
-                    ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
-                    ScorpionEditTextActivity.this.typeface = Typeface.createFromAsset(ScorpionEditTextActivity.this.getAssets(), "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2]);
-                    ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
-                } else if (Pattern.compile("([0-9])").matcher(ScorpionEditTextActivity.this.edittext.getText().toString()).find()) {
-                    Toast.makeText(ScorpionEditTextActivity.this.getApplicationContext(), "Please Select another font style!!!", Toast.LENGTH_LONG).show();
-                } else {
-                    ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
-                    ScorpionEditTextActivity.this.typeface = Typeface.createFromAsset(ScorpionEditTextActivity.this.getAssets(), "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2]);
-                    ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
-                }
-                ScorpionEditTextActivity.this.cnt_pos = arg2;
             }
         });
         this.edittext.addTextChangedListener(new TextWatcher() {
@@ -143,35 +137,58 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
     public void onClick(View arg0) {
         switch (arg0.getId()) {
             case R.id.btn_next /*2131427437*/:
-                if (this.edittext.getText().toString().length() > 0) {
-                    ScorpionUtils.text = this.output_autofit.getText().toString();
-                    setResult(-1);
-                    onBackPressed();
-                    return;
-                }
-                Toast.makeText(getApplicationContext(), "Please Enter Text!", Toast.LENGTH_LONG).show();
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionEditTextActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        if (edittext.getText().toString().length() > 0) {
+                            ScorpionUtils.text = output_autofit.getText().toString();
+                            setResult(-1);
+                            onBackPressed();
+                            return;
+                        }
+                        Toast.makeText(getApplicationContext(), "Please Enter Text!", Toast.LENGTH_LONG).show();
+                    }
+                });
+
+
                 return;
             case R.id.btn_back /*2131427456*/:
-                onBackPressed();
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionEditTextActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        onBackPressed();
+                    }
+                });
+
+
 
                 return;
             case R.id.btn_ok /*2131427480*/:
-                this.output_autofit.setText(this.edittext.getText().toString());
-                ((InputMethodManager) getSystemService(INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(this.edittext.getWindowToken(), 0);
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionEditTextActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        output_autofit.setText(edittext.getText().toString());
+                        ((InputMethodManager) getSystemService(INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(edittext.getWindowToken(), 0);
+                    }
+                });
+
+
                 return;
             case R.id.btn_clr /*2131427481*/:
-                openColorDialog();
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionEditTextActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        openColorDialog();
+                    }
+                });
+
+
                 return;
             default:
                 return;
         }
     }
 
-    public void onBackPressed() {
-
-        super.onBackPressed();
-
-    }
 
     private void openColorDialog() {
         ColorPickerDialogBuilder.with(this).setTitle("Choose color").initialColor(-1).wheelType(WHEEL_TYPE.FLOWER).density(12).setOnColorSelectedListener(new OnColorSelectedListener() {
@@ -200,37 +217,13 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
             }
         }).showColorEdit(true).setColorEditTextColor(getResources().getColor(17170459)).build().show();
     }
-
-
-    public void Banner(final RelativeLayout Ad_Layout, final Context context) {
-
-        AdView mAdView = new AdView(context);
-        mAdView.setAdSize(AdSize.BANNER);
-        mAdView.setAdUnitId(getString(R.string.ads_bnr));
-        AdRequest adre = new AdRequest.Builder().build();
-        mAdView.loadAd(adre);
-        Ad_Layout.addView(mAdView);
-
-        mAdView.setAdListener(new AdListener() {
-
+    public void onBackPressed() {
+        GoogleAds.getInstance().showBackCounterInterstitialAd(this, new RandomBackAdListener() {
             @Override
-            public void onAdLoaded() {
-                // TODO Auto-generated method stub
-                Ad_Layout.setVisibility(View.VISIBLE);
-                super.onAdLoaded();
-            }
-
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                // TODO Auto-generated method stub
-                Ad_Layout.setVisibility(View.GONE);
-
+            public void onClick() {
+                finish();
             }
         });
     }
-
-
-
-
 
 }

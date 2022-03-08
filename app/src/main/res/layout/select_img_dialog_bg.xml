@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/rl_top"
+    android:background="@drawable/splasbgg"
     android:orientation="horizontal"
     android:weightSum="2.0">
 
@@ -11,14 +11,16 @@
         android:layout_height="match_parent"
         android:layout_weight="1.0">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/PopGallery"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:background="@drawable/pop_gal_pressxml" />
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_gallery_5_"
+            android:backgroundTint="@color/black" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -26,13 +28,13 @@
         android:layout_height="match_parent"
         android:layout_weight="1.0">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/PopCamera"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="3dp"
-            android:background="@drawable/pop_cam_pressxml" />
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_camera__1_" />
     </RelativeLayout>
 </LinearLayout>

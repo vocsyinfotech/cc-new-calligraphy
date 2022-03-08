@@ -2,9 +2,13 @@
     <string name="app_name">Calligrapy</string>
 
 
-    <string name="ads_id">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="ads_bnr">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="ads_inter">ca-app-pub-3940256099942544/1033173712</string>
+    <!--    <string name="ads_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--    <string name="ads_bnr">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="ads_inter">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <string name="privacy_policy">https://sharkinfotech2.blogspot.com</string>
+    <string name="ad_json">https://focuslivecameraeffect.xyz/Sharkinfotech/Calligraphy/ads.json</string>
+    <string name="Ad_id">ca-app-pub-3940256099942544~3347511713</string>
 
 
     <string name="moreapp">Account+Name</string>

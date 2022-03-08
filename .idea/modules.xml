@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/calligrapy.iml" filepath="$PROJECT_DIR$/calligrapy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/calligrapy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/calligrapy.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Calligrapy.iml" filepath="$PROJECT_DIR$/.idea/modules/Calligrapy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.iml" />
     </modules>
   </component>
 </project>

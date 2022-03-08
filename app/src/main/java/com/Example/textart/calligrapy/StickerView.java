@@ -495,6 +495,7 @@ public class StickerView extends androidx.appcompat.widget.AppCompatImageView {
     }
 
     public Bitmap createBitmap() {
+        Log.e("TAG", "onClick: on create bitmap  " );
         this.mHandlingSticker = null;
         Bitmap bitmap = Bitmap.createBitmap(getWidth(), getHeight(), Config.ARGB_8888);
         draw(new Canvas(bitmap));

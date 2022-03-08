@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.Example.textart.calligrapy">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -8,23 +9,48 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
-        android:name="com.Example.textart.calligrapy.ScorpionApps"
+        android:name=".GoogleAds.BaseApplication"
         android:allowBackup="true"
         android:icon="@drawable/appicon"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:requestLegacyExternalStorage="true"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:node="merge">
+        <activity
+            android:name=".Sharee"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/Ad_id" />
 
         <activity
-            android:name="com.Example.textart.calligrapy.ScorpionMainActivity"
+            android:name=".GetStatrt2"
+            android:exported="false" />
+        <activity
+            android:name=".GetStart"
+            android:exported="false" />
+        <activity
+            android:name=".ScorpionMainActivity"
+            android:exported="false"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoogleAds.ExitScreen"
+            android:exported="false" />
+        <activity
+            android:name=".GoogleAds.InternetNotAvailableActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -36,40 +62,47 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-
         <activity
-            android:name="com.Example.textart.calligrapy.ScorpionSplashActivity"
+            android:name=".ScorpionSplashActivity"
+            android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.Example.textart.calligrapy.ScorpionEditTextActivity"
+            android:name=".ScorpionEditTextActivity"
+            android:exported="false"
             android:label="@string/title_activity_edit_text"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.Example.textart.calligrapy.ScorpionSave_Images_ShowActivity"
+            android:name=".ScorpionSave_Images_ShowActivity"
+            android:exported="false"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.Example.textart.calligrapy.ScorpionImage_Activity"
+            android:name=".ScorpionImage_Activity"
+            android:exported="false"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.Example.textart.calligrapy.ScorpionMyCrop"
+            android:name=".ScorpionMyCrop"
+            android:exported="false"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.Example.textart.calligrapy.ScorpionStickerGridActivity"
+            android:name=".ScorpionStickerGridActivity"
+            android:exported="false"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.Example.textart.calligrapy.ScorpionTextActivity"
+            android:name=".ScorpionTextActivity"
+            android:exported="false"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
     </application>
+
 </manifest>

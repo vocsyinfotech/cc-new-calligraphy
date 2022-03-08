@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable-v24/ic_sharerrrr.xml" value="0.205" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable-v24/ic_starrr.xml" value="0.205" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable-v24/splshbtn.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/apptheme_edit_text_holo_light.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/cancel_bt_gradient_bg.xml" value="0.205" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/exit_btn.xml" value="0.205" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_backgrounddd.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_camera__1_.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_color_picker__2_.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_color_pickerr.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_dossss.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_fill_colorr.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_fonttt.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_gallary.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_gallary__1_.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_gallery_5_.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_gallery_5___.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_gender_symbols.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_photos_2_.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_refresh.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_refresh__1_.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_save.xml" value="0.205" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_save_button.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_starrr.xml" value="0.205" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ic_themeee.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/morepoppressxml.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/ok_selector.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/drawable/splshbtn.xml" value="0.198" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_edit_text.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_get_start.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_get_statrt2.xml" value="0.30611372381359553" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_internet_not_available.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_main.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_my_crop.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_privacy_policy_jim.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_save__images__show.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_sharee.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_splash.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_tattoo_grid.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/activity_text.xml" value="0.32407407407407407" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/ad_unified.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/big_ad_unified.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/custom_gallery_grid.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/exit_screen.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/font_item.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/item_google_native_ad_outline.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/items.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/loading_dialog.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/new_calli_dslr.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/pixel_item.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/pop_window.xml" value="0.38697916666666665" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/sample.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/select_img_dialog_bg.xml" value="0.31765711842667804" />
+        <entry key="..\:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/res/layout/small_ad_unified.xml" value="0.31765711842667804" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

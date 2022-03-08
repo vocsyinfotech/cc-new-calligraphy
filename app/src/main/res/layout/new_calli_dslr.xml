@@ -2,14 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#efefef"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/toplay"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/rl_top">
+        android:background="@color/black">
 
         <ImageButton
             android:id="@+id/btn_back_gallary"
@@ -17,14 +17,15 @@
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/back_selector" />
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_backk" />
 
         <TextView
             android:id="@+id/txt_top_third"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:fontFamily="@font/text"
             android:text="My Image"
             android:textColor="@color/textcolor"
             android:textSize="20dp" />
@@ -34,9 +35,10 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="10dp"
             android:layout_toLeftOf="@+id/btn_share"
-            android:background="@drawable/delete_unpresed" />
+            android:background="@drawable/ic_deleteeee"
+            android:backgroundTint="@color/white" />
 
         <ImageButton
             android:id="@+id/btn_share"
@@ -44,24 +46,24 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/shar" />
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_shareee"
+            android:backgroundTint="@color/white" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_above="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/banner"
         android:layout_below="@+id/toplay"
         android:orientation="vertical">
 
         <FrameLayout
             android:id="@+id/frame"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
             android:layout_gravity="center">
 
             <ImageView
@@ -73,17 +75,24 @@
         </FrameLayout>
 
 
-
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/rl_top"
+        android:layout_height="?actionBarSize"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:visibility="visible" />
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/nativeLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

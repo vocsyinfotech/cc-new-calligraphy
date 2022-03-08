@@ -9,8 +9,8 @@
     <RelativeLayout
         android:id="@+id/topheight"
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/rl_top">
+        android:layout_height="?actionBarSize"
+        android:background="@color/black">
 
         <ImageButton
             android:id="@+id/btnback"
@@ -18,14 +18,15 @@
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/back_selector" />
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_backk" />
 
         <TextView
             android:id="@+id/txt_top_crop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:fontFamily="@font/text"
             android:text="Crop Image"
             android:textColor="@color/textcolor"
             android:textSize="20dp" />
@@ -41,80 +42,88 @@
 
         <com.Example.textart.calligrapy.CropImageView
             android:id="@+id/cropImageView"
-            android:layout_above="@+id/rl_bottum"
-            android:layout_below="@+id/botms"
-            android:layout_gravity="center"
-            android:layout_height="match_parent"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_bottum"
+            android:layout_gravity="center"
             android:scaleType="centerCrop" />
 
         <RelativeLayout
-            android:background="@color/rl_top"
             android:id="@+id/rl_bottum"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent">
+            android:background="@color/black">
 
             <LinearLayout
-                android:layout_centerHorizontal="true"
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
                 android:weightSum="3.0">
 
                 <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.0"
-                    android:layout_width="match_parent">
+                    android:layout_weight="1.0">
 
                     <ImageButton
-                        android:background="@drawable/left_selector"
                         android:id="@+id/btn_left"
-                        android:layout_centerInParent="true"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:layout_width="40dp" />
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/left_selector" />
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_height="match_parent"
-                    android:layout_weight="1.0"
-                    android:layout_width="match_parent">
-
-                    <ImageButton
-                        android:background="@drawable/crop_selector"
-                        android:id="@+id/btn_next"
-                        android:layout_centerInParent="true"
-                        android:layout_height="40dp"
-                        android:layout_width="40dp" />
-                </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.0"
-                    android:layout_width="match_parent">
+                    android:layout_weight="1.0">
 
                     <ImageButton
-                        android:background="@drawable/right_selector"
                         android:id="@+id/btn_right"
-                        android:layout_centerInParent="true"
+                        android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:layout_width="40dp" />
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/right_selector" />
                 </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+
+                    <ImageButton
+                        android:id="@+id/btn_next"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_tick"
+                        android:backgroundTint="@color/white" />
+                </RelativeLayout>
+
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
 
 
-
     <RelativeLayout
         android:id="@+id/banner"
-        android:background="@color/colorAccent"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="?actionBarSize"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:visibility="visible" />
+        android:background="@color/white"
+        android:visibility="visible" >
+        <LinearLayout
+            android:id="@+id/nativeLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

@@ -8,7 +8,7 @@
         android:id="@+id/toplay"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/rl_top">
+        android:background="@color/black">
 
         <ImageButton
             android:id="@+id/btn_back_image"
@@ -16,14 +16,15 @@
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/back_selector" />
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_backk" />
 
         <TextView
             android:id="@+id/maintext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:fontFamily="@font/text"
             android:text="My Images"
             android:textColor="@color/textcolor"
             android:textSize="20sp" />
@@ -37,11 +38,11 @@
 
         <GridView
             android:id="@+id/gridView1"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
+            android:layout_weight="1"
             android:gravity="center"
             android:horizontalSpacing="3dp"
             android:listSelector="@color/backgroundcolor"
@@ -51,10 +52,19 @@
         <RelativeLayout
             android:id="@+id/banner"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/rl_top"
+            android:layout_height="?actionBarSize"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:gravity="center" />
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/nativeLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" />
+
+        </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/rl_top"
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
+        android:layout_height="?actionBarSize"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@color/rl_top">
+        android:background="@color/themecolor">
 
         <ImageButton
             android:id="@+id/btn_back"
@@ -18,17 +19,18 @@
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/back_selector" />
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_backk" />
 
         <TextView
             android:id="@+id/txt_top_third"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:fontFamily="@font/text"
             android:text="Edit Text"
             android:textColor="@color/textcolor"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
 
         <ImageButton
             android:id="@+id/btn_next"
@@ -36,115 +38,144 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/verification" />
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_baseline_check_" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rl_prv"
-        android:padding="2dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_below="@+id/rl_top">
 
         <me.grantland.widget.AutofitTextView
             android:id="@+id/output_android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roman"
             android:gravity="center"
             android:singleLine="true"
             android:text="Add Text"
-            android:textColor="#000"
-            android:textSize="30dp"/>
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/ll_edit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?actionBarSize"
         android:layout_below="@+id/rl_prv"
         android:layout_centerHorizontal="true">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_toLeftOf="@+id/rl_ok">
+            android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/edittext"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="start"
-                android:background="@drawable/apptheme_edit_text_holo_light"
-                android:ems="10">
-                <requestFocus />
-            </EditText>
-        </RelativeLayout>
+                android:layout_height="?actionBarSize"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/rl_ok"
+                android:gravity="bottom">
 
-        <RelativeLayout
-            android:id="@+id/rl_ok"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginRight="8dp"
-            android:layout_toLeftOf="@+id/rl_clr">
+                <EditText
+                    android:id="@+id/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#56000000"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
 
-            <ImageButton
-                android:id="@+id/btn_ok"
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ok"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/ok_selector" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/rl_clr">
+
+                <ImageButton
+                    android:id="@+id/btn_ok"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/clean" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_clr"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_clr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_color_picker__2_" />
+            </RelativeLayout>
         </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/rl_clr"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginRight="8dp">
 
-            <ImageButton
-                android:id="@+id/btn_clr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/textclr_selector" />
-        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:padding="2dp"
-        android:layout_above="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/ll_edit">
+        android:layout_above="@+id/banner"
+        android:layout_below="@+id/ll_edit"
+        android:layout_marginTop="10dp"
+        android:padding="2dp">
 
-        <com.Example.textart.calligrapy.NonScrollListView
-            android:id="@+id/fontgrid"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:gravity="center"
-            android:numColumns="2"
-            android:stretchMode="columnWidth"
-            android:verticalSpacing="20dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <com.Example.textart.calligrapy.NonScrollListView
+                android:id="@+id/fontgrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="1" />
+
+        </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
 
 
     <RelativeLayout
         android:id="@+id/banner"
-        android:background="@color/rl_top"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="?actionBarSize"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:visibility="visible" />
+        android:background="@color/white"
+        android:visibility="visible">
 
+        <LinearLayout
+            android:id="@+id/nativeLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

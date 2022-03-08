@@ -13,6 +13,9 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.Example.textart.calligrapy.GoogleAds.GoogleAds;
+import com.Example.textart.calligrapy.GoogleAds.RandomAdListener;
+import com.Example.textart.calligrapy.GoogleAds.RandomBackAdListener;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -42,21 +45,8 @@ public class ScorpionStickerGridActivity extends Activity implements OnClickList
         getWindow().addFlags(128);
         getWindow().setFlags(1024, 1024);
         setContentView(R.layout.activity_tattoo_grid);
-
-
-        if (ScorpionNetwork.isDataConnectionAvailable(getBaseContext())) {
-
-            RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.banner);
-
-            Banner(relativeLayout, ScorpionStickerGridActivity.this);
-        }
-
-
+        GoogleAds.getInstance().admobBanner(this, findViewById(R.id.nativeLay));
         FindViews();
-        try {
-
-        } catch (Exception e) {
-        }
         this.folder = "symbol/cool";
         this.txt_title.setText("Symbol");
         setStickers(this.folder);
@@ -85,7 +75,12 @@ public class ScorpionStickerGridActivity extends Activity implements OnClickList
     }
 
     public void onBackPressed() {
-        super.onBackPressed();
+        GoogleAds.getInstance().showBackCounterInterstitialAd(this, new RandomBackAdListener() {
+            @Override
+            public void onClick() {
+                finish();
+            }
+        });
     }
 
     private String[] getImage(String folderName) throws IOException {
@@ -95,35 +90,90 @@ public class ScorpionStickerGridActivity extends Activity implements OnClickList
     public void onClick(View arg0) {
         switch (arg0.getId()) {
             case R.id.btnBack /*2131427443*/:
-                onBackPressed();
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionStickerGridActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        onBackPressed();
+                    }
+                });
+
+
                 return;
             case R.id.btn_sticker1 /*2131427449*/:
-                this.folder = "symbol/cool";
-                setStickers(this.folder);
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionStickerGridActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+
+                        folder = "symbol/cool";
+                        setStickers(folder);
+                    }
+                });
+
                 return;
             case R.id.btn_sticker2 /*2131427450*/:
-                this.folder = "symbol/couple";
-                setStickers(this.folder);
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionStickerGridActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        folder = "symbol/couple";
+                        setStickers(folder);
+                    }
+                });
+
+
                 return;
             case R.id.btn_sticker3 /*2131427451*/:
-                this.folder = "symbol/dot";
-                setStickers(this.folder);
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionStickerGridActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+
+                        folder = "symbol/dot";
+                        setStickers(folder);
+                    }
+                });
+
                 return;
             case R.id.btn_sticker4 /*2131427452*/:
-                this.folder = "symbol/extra";
-                setStickers(this.folder);
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionStickerGridActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        folder = "symbol/extra";
+                        setStickers(folder);
+                    }
+                });
+
+
                 return;
             case R.id.btn_sticker5 /*2131427453*/:
-                this.folder = "symbol/feathers";
-                setStickers(this.folder);
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionStickerGridActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        folder = "symbol/feathers";
+                        setStickers(folder);
+                    }
+                });
+
+
                 return;
             case R.id.btn_sticker6 /*2131427454*/:
-                this.folder = "symbol/heart";
-                setStickers(this.folder);
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionStickerGridActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+
+                        folder = "symbol/heart";
+                        setStickers(folder);
+                    }
+                });
+
                 return;
             case R.id.btn_sticker7 /*2131427455*/:
-                this.folder = "symbol/strock";
-                setStickers(this.folder);
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionStickerGridActivity.this, new RandomAdListener() {
+                    @Override
+                    public void onClick() {
+                        folder = "symbol/strock";
+                        setStickers(folder);
+                    }
+                });
+
                 return;
             default:
                 return;
@@ -145,35 +195,5 @@ public class ScorpionStickerGridActivity extends Activity implements OnClickList
             }
         });
     }
-
-
-    public void Banner(final RelativeLayout Ad_Layout, final Context context) {
-
-        AdView mAdView = new AdView(context);
-        mAdView.setAdSize(AdSize.BANNER);
-        mAdView.setAdUnitId(getString(R.string.ads_bnr));
-        AdRequest adre = new AdRequest.Builder().build();
-        mAdView.loadAd(adre);
-        Ad_Layout.addView(mAdView);
-
-        mAdView.setAdListener(new AdListener() {
-
-            @Override
-            public void onAdLoaded() {
-                // TODO Auto-generated method stub
-                Ad_Layout.setVisibility(View.VISIBLE);
-                super.onAdLoaded();
-            }
-
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                // TODO Auto-generated method stub
-                Ad_Layout.setVisibility(View.GONE);
-
-            }
-        });
-    }
-
-
 
 }
