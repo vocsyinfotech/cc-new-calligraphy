@@ -148,7 +148,7 @@
             app:cardCornerRadius="10dp"
             app:cardUseCompatPadding="true">
 
-            <com.Example.textart.calligrapy.NonScrollListView
+            <com.Example.calligrapy.NonScrollListView
                 android:id="@+id/fontgrid"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

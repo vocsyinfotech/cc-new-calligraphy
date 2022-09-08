@@ -15,7 +15,7 @@
         android:textSize="35sp"
         android:textStyle="bold" />
 
-    <com.Example.textart.calligrapy.ScorpionDotsProgressBar
+    <com.Example.calligrapy.ScorpionDotsProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="visible"

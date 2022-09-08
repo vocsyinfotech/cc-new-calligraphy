@@ -11,28 +11,42 @@
     <declare-styleable name="CropImageView">
 
         <attr name="guidelines">
-            <enum name="off" value="0"/>
-            <enum name="onTouch" value="1"/>
-            <enum name="on" value="2"/>
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
         </attr>
 
-        <attr name="fixAspectRatio" format="boolean"/>
-        <attr name="aspectRatioX" format="integer"/>
-        <attr name="aspectRatioY" format="integer"/>
-        <attr name="imageResource" format="reference"/>
+        <attr name="fixAspectRatio" format="boolean" />
+        <attr name="aspectRatioX" format="integer" />
+        <attr name="aspectRatioY" format="integer" />
+        <attr name="imageResource" format="reference" />
     </declare-styleable>
     <!--<declare-styleable name="CropImageView">-->
 
-        <!--<attr name="guidelines">-->
-            <!--<enum name="off" value="0"/>-->
-            <!--<enum name="onTouch" value="1"/>-->
-            <!--<enum name="on" value="2"/>-->
-        <!--</attr>-->
+    <!--<attr name="guidelines">-->
+    <!--<enum name="off" value="0"/>-->
+    <!--<enum name="onTouch" value="1"/>-->
+    <!--<enum name="on" value="2"/>-->
+    <!--</attr>-->
 
-        <!--<attr name="fixAspectRatio" format="boolean"/>-->
-        <!--<attr name="aspectRatioX" format="integer"/>-->
-        <!--<attr name="aspectRatioY" format="integer"/>-->
+    <!--<attr name="fixAspectRatio" format="boolean"/>-->
+    <!--<attr name="aspectRatioX" format="integer"/>-->
+    <!--<attr name="aspectRatioY" format="integer"/>-->
 
     <!--</declare-styleable>-->
+
+    <declare-styleable name="IconTextView">
+
+        <attr name="Summary" format="string" />
+
+        <attr name="IconId" format="reference" />
+
+        <attr name="LinePosition" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+
+    </declare-styleable>
 
 </resources>

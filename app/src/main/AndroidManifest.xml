@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.Example.textart.calligrapy">
+    package="com.Example.calligrapy">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -11,12 +11,19 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
-        android:name=".GoogleAds.BaseApplication"
+        android:name="vocsy.ads.AdsApplication"
         android:allowBackup="true"
         android:icon="@drawable/appicon"
         android:label="@string/app_name"
@@ -30,9 +37,11 @@
             android:name=".Sharee"
             android:exported="false" />
 
+
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/Ad_id" />
+            android:value="@string/admob_app_id" />
 
         <activity
             android:name=".GetStatrt2"
@@ -45,12 +54,6 @@
             android:exported="false"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".GoogleAds.ExitScreen"
-            android:exported="false" />
-        <activity
-            android:name=".GoogleAds.InternetNotAvailableActivity"
-            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

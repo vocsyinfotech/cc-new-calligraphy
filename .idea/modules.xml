@@ -3,7 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Calligrapy.iml" filepath="$PROJECT_DIR$/.idea/modules/Calligrapy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.unitTest.iml" />
     </modules>
   </component>
 </project>
