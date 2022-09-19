@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
 
 import vocsy.ads.AdsHandler;
@@ -34,12 +33,13 @@ public class ScorpionSplashActivity extends Activity {
             // admob init Success
         }).execute();
 
-        AdsHandler.setAdsOn(false);
+        AdsHandler.setAdsOn(true);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(ScorpionSplashActivity.this, GetStart.class));
+                startActivity(new Intent(ScorpionSplashActivity.this, GetStartActivity.class));
+                finish();
             }
         }, 1500);
     }

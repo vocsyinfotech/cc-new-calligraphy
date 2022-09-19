@@ -2,7 +2,6 @@ package com.Example.calligrapy;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -26,20 +25,10 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.MediaStore.Images.Media;
-
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.core.content.FileProvider;
-
 import android.provider.Settings;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.FrameLayout;
@@ -48,7 +37,12 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.Toast;
 
-//import com.gc.materialdesign.widgets.ProgressDialog;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
+
 import com.koushikdutta.async.http.body.StringBody;
 import com.koushikdutta.ion.loader.MediaFile;
 
@@ -93,7 +87,6 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
     Uri selectedImageUri;
     StickerView sticker_view;
     Bitmap bm;
-    private Dialog dialog;
     private int requestCode;
     private File photoFile;
 
@@ -129,7 +122,6 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
 
         switch (i) {
             case 101:
-
                 Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 try {
                     photoFile = createImageFile();
@@ -149,11 +141,9 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
 //                Log.e(TAG, "handleEvent:  ScorpionUtils.selectedImageUri: " + ScorpionUtils.selectedImageUri);
 //                it_cam.putExtra("output", uri);
 //                ScorpionTextActivity.this.startActivityForResult(it_cam, ScorpionTextActivity.RESULT_FROM_CAMERA);
-                dialog.dismiss();
                 break;
             case 102:
                 ScorpionTextActivity.this.startActivityForResult(new Intent("android.intent.action.PICK", Media.EXTERNAL_CONTENT_URI), ScorpionTextActivity.RESULT_FROM_GALLERY);
-                dialog.dismiss();
                 break;
             case 301:
                 try {
@@ -208,7 +198,7 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
             super.onPostExecute(result);
             ScorpionTextActivity.this.pdsave.dismiss();
             Toast.makeText(ScorpionTextActivity.this.getApplicationContext(), "Image Saved in " + ScorpionTextActivity.this.applicationName, Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(ScorpionTextActivity.this, ScorpionSave_Images_ShowActivity.class));
+            startActivity(new Intent(ScorpionTextActivity.this, MyCreation.class));
             galleryAddPic();
         }
     }
@@ -267,7 +257,7 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
         }
         this.applicationName = getResources().getString(R.string.app_name);
         this.mGalleryFolder = createFolders();
-        if (ScorpionUtils.bits!=null) {
+        if (ScorpionUtils.bits != null) {
             this.sticker_view.setImageBitmap(getResizedBitmapp(ScorpionUtils.bits, 700));
         }
         this.sticker_view.setBackgroundColor(-1);
@@ -447,26 +437,17 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
 
     @SuppressLint("ResourceType")
     private void selectImage() {
-        dialog = new Dialog(this, 16973841);
-        View v = ((LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.select_img_dialog_bg, null);
-        Animation left_anim = AnimationUtils.loadAnimation(this, R.anim.left_anim);
-        Animation right_anim = AnimationUtils.loadAnimation(this, R.anim.right_anim);
-        ImageView Gal = (ImageView) v.findViewById(R.id.PopGallery);
-        ImageView Cam = (ImageView) v.findViewById(R.id.PopCamera);
-        Gal.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, 102);
+
+        new ItemChoiceDialog(ScorpionTextActivity.this, (action -> {
+            switch (action) {
+                case "gallery":
+                    checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, 102);
+                    break;
+                case "camera":
+                    checkPermission(Manifest.permission.CAMERA, 101);
+                    break;
             }
-        });
-        Cam.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                checkPermission(Manifest.permission.CAMERA, 101);
-            }
-        });
-        Gal.setAnimation(right_anim);
-        Cam.setAnimation(left_anim);
-        dialog.setContentView(v);
-        dialog.show();
+        })).show();
     }
 
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
@@ -690,7 +671,7 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
 
     public void onBackPressed() {
 
-        startActivity(new Intent(ScorpionTextActivity.this, ScorpionMainActivity.class));
+        finish();
 
     }
 

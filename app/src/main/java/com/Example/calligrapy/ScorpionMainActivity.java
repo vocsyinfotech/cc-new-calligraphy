@@ -14,8 +14,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -30,13 +28,12 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
 
-import vocsy.ads.CustomAdsListener;
 import vocsy.ads.GoogleAds;
 
 
 public class ScorpionMainActivity extends AppCompatActivity {
-    LinearLayout btn_img;
-    LinearLayout btn_start;
+    private LinearLayout your_creation;
+    private LinearLayout create_new;
 
     private boolean isStart = false;
 
@@ -100,133 +97,49 @@ public class ScorpionMainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().addFlags(128);
-        getWindow().setFlags(1024, 1024);
+        SystemConfiguration.setStatusBarColor(this, R.color.backgroundcolor);
         setContentView(R.layout.activity_main);
 
-        GoogleAds.getInstance().addNativeView(this, findViewById(R.id.nativeLay));
+        GoogleAds.getInstance().addBigNativeView(this, findViewById(R.id.nativeLay));
 
-        this.btn_start = (LinearLayout) findViewById(R.id.btn_start);
-        this.btn_start.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
-                isStart = true;
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                    if (ContextCompat.checkSelfPermission(ScorpionMainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-//                        startNextActivity();
-//                    } else if (shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-//                        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-//                        Uri uri = Uri.fromParts("package", getPackageName(), null);
-//                        intent.setData(uri);
-//                        startActivity(intent);
-//                    } else {
-//                        permissionListener.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-//                    }
-//                }
-
-                new ItemChoiceDialog(ScorpionMainActivity.this, (action -> {
-                    switch (action) {
-                        case "gallery":
-                            startPermission(ScorpionMainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE, 101);
-                            break;
-                        case "camera":
-                            startPermission(ScorpionMainActivity.this, Manifest.permission.CAMERA, 102);
-                            break;
-                    }
-                })).show();
+        this.create_new = (LinearLayout) findViewById(R.id.create_new);
+        this.create_new.setOnClickListener(arg0 -> {
+            isStart = true;
+            new ItemChoiceDialog(ScorpionMainActivity.this, (action -> {
+                switch (action) {
+                    case "gallery":
+                        startPermission(ScorpionMainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE, 101);
+                        break;
+                    case "camera":
+                        startPermission(ScorpionMainActivity.this, Manifest.permission.CAMERA, 102);
+                        break;
+                }
+            })).show();
 
 //                chooseFromCamera(502);
-            }
         });
 
-        this.btn_img = (LinearLayout) findViewById(R.id.btn_img);
-        this.btn_img.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
-                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionMainActivity.this, new CustomAdsListener() {
-                    @Override
-                    public void onFinish() {
-
-                        isStart = false;
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                            if (ContextCompat.checkSelfPermission(ScorpionMainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                                startNextActivity();
-                            } else if (shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-                                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                                Uri uri = Uri.fromParts("package", getPackageName(), null);
-                                intent.setData(uri);
-                                startActivity(intent);
-                            } else {
-                                permissionListener.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-                            }
-                        }
-                    }
-                });
-
+        this.your_creation = (LinearLayout) findViewById(R.id.your_creation);
+        this.your_creation.setOnClickListener(arg0 -> GoogleAds.getInstance().showCounterInterstitialAd(ScorpionMainActivity.this, () -> {
+            isStart = false;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (ContextCompat.checkSelfPermission(ScorpionMainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                    startNextActivity();
+                } else if (shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                    Uri uri = Uri.fromParts("package", getPackageName(), null);
+                    intent.setData(uri);
+                    startActivity(intent);
+                } else {
+                    permissionListener.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+                }
             }
-        });
+        }));
     }
 
     private void startNextActivity() {
-        startActivity(new Intent(ScorpionMainActivity.this, isStart ? ScorpionTextActivity.class : ScorpionSave_Images_ShowActivity.class));
+        startActivity(new Intent(ScorpionMainActivity.this, isStart ? ScorpionTextActivity.class : MyCreation.class));
     }
-
-
-    public void onBackPressed() {
-
-        startActivity(new Intent(ScorpionMainActivity.this, GetStatrt2.class));
-
-    }
-
-//    @Override
-//    public void onBackPressed() {
-//        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-//        alertDialogBuilder.setTitle("Exit Application?");
-//        alertDialogBuilder
-//                .setMessage("Click yes to exit!")
-//                .setCancelable(false)
-//                .setPositiveButton("Yes",
-//                        new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int id) {
-//                                moveTaskToBack(true);
-//                                android.os.Process.killProcess(android.os.Process.myPid());
-//                                System.exit(1);
-//                            }
-//                        })
-//
-//                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//
-//                        dialog.cancel();
-//                    }
-//
-//
-//                })
-//
-//
-//                .setNeutralButton("More app", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//
-//                        Intent more = new Intent(
-//                                "android.intent.action.VIEW",
-//                                Uri.parse("https://play.google.com/store/apps/developer?id=" + getString(R.string.moreapp)));
-//                        try {
-//                            startActivity(more);
-//
-//                        } catch (ActivityNotFoundException e) {
-//                            Toast.makeText(
-//                                    ScorpionMainActivity.this,
-//                                    "you_don_t_have_google_play_installed_or_internet_connection", Toast.LENGTH_LONG).show();
-//                        }
-//
-//                    }
-//                })
-//        ;
-//
-//
-//        AlertDialog alertDialog = alertDialogBuilder.create();
-//        alertDialog.show();
-//
-//    }
 
 
     private ActivityResultLauncher<String> permissionListener = registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {

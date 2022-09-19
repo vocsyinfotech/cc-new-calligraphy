@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
     <RelativeLayout
-        android:id="@+id/toplay"
+        android:id="@+id/tool_bar"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:background="@color/black">
@@ -14,9 +14,9 @@
             android:id="@+id/btn_back_image"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:layout_marginHorizontal="16dp"
             android:background="@drawable/ic_backk" />
 
         <TextView
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/text"
+            android:fontFamily="@font/google_sans_medium"
             android:text="My Images"
             android:textColor="@color/textcolor"
             android:textSize="20sp" />
@@ -33,38 +33,37 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toplay"
+        android:layout_above="@+id/banner"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:orientation="vertical">
 
-        <GridView
-            android:id="@+id/gridView1"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:horizontalSpacing="3dp"
-            android:listSelector="@color/backgroundcolor"
-            android:numColumns="3"
-            android:stretchMode="columnWidth" />
+            android:layout_margin="5dp" />
 
-        <RelativeLayout
-            android:id="@+id/banner"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/white">
-
-            <LinearLayout
-                android:id="@+id/nativeLay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal" />
-
-        </RelativeLayout>
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/nativeLay"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
 </RelativeLayout>

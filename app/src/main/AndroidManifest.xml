@@ -44,10 +44,10 @@
             android:value="@string/admob_app_id" />
 
         <activity
-            android:name=".GetStatrt2"
+            android:name=".EnterAppActivity"
             android:exported="false" />
         <activity
-            android:name=".GetStart"
+            android:name=".GetStartActivity"
             android:exported="false" />
         <activity
             android:name=".ScorpionMainActivity"
@@ -82,7 +82,7 @@
             android:label="@string/title_activity_edit_text"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ScorpionSave_Images_ShowActivity"
+            android:name=".MyCreation"
             android:exported="false"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />

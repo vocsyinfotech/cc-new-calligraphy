@@ -49,4 +49,9 @@
 
     </declare-styleable>
 
+
+    <declare-styleable name="LogoView">
+        <attr name="radius" format="integer" />
+    </declare-styleable>
+
 </resources>

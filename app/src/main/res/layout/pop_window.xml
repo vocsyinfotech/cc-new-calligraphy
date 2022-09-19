@@ -24,12 +24,12 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
                     android:id="@+id/llshareimg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -38,29 +38,29 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
-                        android:textSize="18dp"
                         android:fontFamily="@font/text"
                         android:gravity="center"
                         android:text="Share Image"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="#ffffff"
+                        android:textSize="18dp"
                         android:typeface="normal" />
 
                     <View
-                        android:layout_marginTop="5dp"
-
                         android:layout_width="match_parent"
+
                         android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
                         android:background="@color/white" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llsetas"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -69,29 +69,29 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
+                        android:fontFamily="@font/text"
                         android:gravity="center"
                         android:text="Set as"
-                        android:textSize="18dp"
-                        android:fontFamily="@font/text"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="#ffffff"
+                        android:textSize="18dp"
                         android:typeface="normal" />
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_marginTop="5dp"
-
                         android:layout_height="1dp"
+
+                        android:layout_marginTop="5dp"
                         android:background="@color/white" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llrateus"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -100,29 +100,29 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:textSize="18dp"
                         android:fontFamily="@font/text"
+                        android:gravity="center"
                         android:text="Rate us"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="#ffffff"
+                        android:textSize="18dp"
                         android:typeface="normal" />
 
                     <View
-                        android:layout_marginTop="5dp"
-
                         android:layout_width="match_parent"
+
                         android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
                         android:background="@color/white" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llsave"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -132,28 +132,28 @@
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
                         android:fontFamily="@font/text"
-                        android:textSize="18dp"
                         android:gravity="center"
                         android:text="Save"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="#ffffff"
+                        android:textSize="18dp"
                         android:typeface="normal" />
 
                     <View
-                        android:layout_marginTop="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
                         android:background="@color/white" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llsharelink"
                     android:layout_width="match_parent"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -162,12 +162,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:textSize="18dp"
                         android:fontFamily="@font/text"
+                        android:gravity="center"
                         android:text="Share link"
                         android:textAppearance="?android:textAppearanceLarge"
                         android:textColor="#ffffff"
+                        android:textSize="18dp"
                         android:typeface="normal" />
 
                 </LinearLayout>

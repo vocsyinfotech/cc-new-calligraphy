@@ -37,7 +37,6 @@ public class ScorpionImage_Activity extends Activity implements OnClickListener 
         getWindow().addFlags(128);
         getWindow().setFlags(1024, 1024);
         setContentView(R.layout.new_calli_dslr);
-
         this.context = this;
         GoogleAds.getInstance().admobBanner(this, findViewById(R.id.nativeLay));
         path = getIntent().getExtras().getString("imageID");
@@ -53,47 +52,31 @@ public class ScorpionImage_Activity extends Activity implements OnClickListener 
 
 
     public void onBackPressed() {
-
         finish();
-
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_back_gallary /*2131427490*/:
+//                Intent b1 = new Intent(getApplicationContext(), ScorpionMainActivity.class);
+//                b1.setFlags(67141632);
+//                startActivity(b1);
+//                finish();
 
-
-                Intent b1 = new Intent(getApplicationContext(), ScorpionMainActivity.class);
-                b1.setFlags(67141632);
-                startActivity(b1);
-                finish();
-
-
+                onBackPressed();
                 return;
             case R.id.btn_delete /*2131427491*/:
-
                 path = getIntent().getExtras().getString("imageID");
-                String folderpath = Environment.getExternalStorageDirectory().toString();
                 File fdelete = new File(path);
                 if (fdelete.exists()) {
                     if (fdelete.delete()) {
-                        Log.e("-->", "file Deleted :" + path);
-                        finish();
-                        Intent in = new Intent(getApplicationContext(), ScorpionSave_Images_ShowActivity.class);
-                        in.setFlags(67141632);
-                        startActivity(in);
-
+                        onBackPressed();
                         DeleteRecursive(fdelete);
-                    } else {
-                        Log.e("-->", "file not Deleted :" + path);
                     }
                 }
-
-
-                finish();
+                onBackPressed();
                 return;
             case R.id.btn_share /*2131427492*/:
-
 
                 String appnameString = getResources().getString(R.string.app_name);
                 Intent sharingIntent = new Intent("android.intent.action.SEND");
@@ -106,7 +89,6 @@ public class ScorpionImage_Activity extends Activity implements OnClickListener 
                 sharingIntent.setType("image/jpg");
                 sharingIntent.putExtra("android.intent.extra.STREAM", screenshotUri);
                 startActivity(Intent.createChooser(sharingIntent, "Share Image"));
-
 
                 return;
             default:
@@ -123,7 +105,6 @@ public class ScorpionImage_Activity extends Activity implements OnClickListener 
                 DeleteRecursive(child);
             }
         }
-
         fileOrDirectory.delete();
     }
 

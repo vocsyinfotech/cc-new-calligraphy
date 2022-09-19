@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.Example.calligrapy.LogoView
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/appicon"
+            android:transitionName="image"
+            app:radius="20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/google_sans_bold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:transitionName="title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/google_sans_regular"
+            android:gravity="center"
+            android:text="Create new calligraphy easily\nclick and apply filters and effects,\nGet new and latest effect\nImprove your beauty"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:transitionName="desc" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingVertical="32dp">
+
+
+        <LinearLayout
+            android:id="@+id/get_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:transitionName="lay_1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_dashboard" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:fontFamily="@font/google_sans_medium"
+                android:gravity="center"
+                android:paddingHorizontal="22dp"
+                android:text="Enter App"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_chevron_right" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:transitionName="lay_2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_privacy" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:fontFamily="@font/google_sans_medium"
+                android:gravity="center"
+                android:paddingHorizontal="22dp"
+                android:text="Privacy Policy"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_chevron_right" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/rate_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_rate" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:fontFamily="@font/google_sans_medium"
+                android:gravity="center"
+                android:paddingHorizontal="22dp"
+                android:text="Rate App"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_chevron_right" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/share_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_share_us" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:alpha="0.8"
+                android:fontFamily="@font/google_sans_medium"
+                android:gravity="center"
+                android:paddingHorizontal="22dp"
+                android:text="Share App"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_chevron_right" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
