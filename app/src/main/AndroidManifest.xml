@@ -45,9 +45,11 @@
 
         <activity
             android:name=".EnterAppActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".GetStartActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ScorpionMainActivity"

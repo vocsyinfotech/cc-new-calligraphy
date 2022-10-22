@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import vocsy.ads.ExitScreen;
 
-public class GetStartActivity extends AppCompatActivity {
+public class   GetStartActivity extends AppCompatActivity {
     private Button get_start;
     private LogoView image;
     private TextView title;

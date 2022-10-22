@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="_device_class_phone" />
+        <device id="5.4in FWVGA" />
+        <device id="4in WVGA (Nexus S)" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9edead14-5b6f-49e8-a3f7-c7e83305ed92" name="Default Changelist" comment="[CHANGE] UI">
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/GetStartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/GetStartActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionEditTextActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionEditTextActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionMainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionTextActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionTextActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/appicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/appicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_text.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_creation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_creation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_crop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_crop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tattoo_grid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tattoo_grid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_text.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/new_calli_dslr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/new_calli_dslr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.1.43:5555]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="Class" />
+        <option value="layoutResourceFile" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="D:\Keys\envoto.jks" />
+    <option name="KEY_ALIAS" value="envoto" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="263ILx8MrOHJT1LsgvqLGPCQRRT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="Calligrapy.app" />
+    <property name="ExportApk.ApkPath" value="D:\CC APP\CC's app\New Callygraphy\Calligrapy\Apk" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="android-custom-viewC:/Users/jemis/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/card/MaterialCardView.java_MaterialCardView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/jemis/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/card/MaterialCardView.java_SELECTED" value="MaterialCardView" />
+    <property name="android-custom-viewC:/Users/jemis/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/textview/MaterialTextView.java_MaterialTextView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/jemis/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/textview/MaterialTextView.java_SELECTED" value="MaterialTextView" />
+    <property name="android-custom-viewD:/CC APP/CC's app/New Callygraphy/Calligrapy/app/src/main/java/com/Example/calligrapy/IconTextView.java_IconTextView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewD:/CC APP/CC's app/New Callygraphy/Calligrapy/app/src/main/java/com/Example/calligrapy/IconTextView.java_SELECTED" value="IconTextView" />
+    <property name="android-custom-viewD:/CC APP/CC's app/New Callygraphy/Calligrapy/app/src/main/java/com/Example/calligrapy/LogoView.java_LogoView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewD:/CC APP/CC's app/New Callygraphy/Calligrapy/app/src/main/java/com/Example/calligrapy/LogoView.java_SELECTED" value="LogoView" />
+    <property name="android-custom-viewD:/CC APP/CC's app/New Callygraphy/Calligrapy/app/src/main/java/com/Example/calligrapy/StickerView.java_SELECTED" value="StickerView" />
+    <property name="android-custom-viewD:/CC APP/CC's app/New Callygraphy/Calligrapy/app/src/main/java/com/Example/textart/calligrapy/IconTextView.java_IconTextView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewD:/CC APP/CC's app/New Callygraphy/Calligrapy/app/src/main/java/com/Example/textart/calligrapy/IconTextView.java_SELECTED" value="IconTextView" />
+    <property name="android-custom-viewD:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/java/com/Example/textart/calligrapy/CropImageView.java_CropImageView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewD:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/java/com/Example/textart/calligrapy/CropImageView.java_SELECTED" value="CropImageView" />
+    <property name="android-custom-viewD:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/java/com/Example/textart/calligrapy/HorizontalListView.java_SELECTED" value="HorizontalListView" />
+    <property name="android-custom-viewD:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/java/com/Example/textart/calligrapy/NonScrollListView.java_SELECTED" value="NonScrollListView" />
+    <property name="android-custom-viewD:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/java/com/Example/textart/calligrapy/ScorpionDotsProgressBar.java_SELECTED" value="ScorpionDotsProgressBar" />
+    <property name="android-custom-viewD:/Vocsy Project/Calligrapy/Code/Calligrapy/app/src/main/java/com/Example/textart/calligrapy/StickerView.java_SELECTED" value="StickerView" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Apk" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CC APP\CC's app\New Callygraphy\Calligrapy\app\src\main\res\drawable" />
+      <recent name="D:\CC APP\CC's app\New Callygraphy\Calligrapy\app\src\main\res\font" />
+      <recent name="D:\CC APP\CC's app\New Callygraphy\Calligrapy\app\src\main\res\drawable-v24" />
+      <recent name="D:\Vocsy Project\Calligrapy\Code\Calligrapy\app\src\main\res\drawable" />
+      <recent name="D:\Vocsy Project\Calligrapy\Code\Calligrapy\app\src\main\res\layout" />
+    </key>
+    <key name="android.template.180440483">
+      <recent name="com.Example.textart.calligrapy" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.Example" />
+      <recent name="com.Example.textart.calligrapy" />
+    </key>
+    <key name="android.template.-520922608">
+      <recent name="com.Example.textart.calligrapy" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.Example.calligrapy" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Calligrapy.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+        <option name="PROFILING_MODE" value="NOT_SET" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9edead14-5b6f-49e8-a3f7-c7e83305ed92" name="Default Changelist" comment="" />
+      <created>1646645790549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646645790549</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Complete App">
+      <created>1646734842768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646734842768</updated>
+    </task>
+    <task id="LOCAL-00002" summary="New app commit">
+      <created>1662641293377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662641293377</updated>
+    </task>
+    <task id="LOCAL-00003" summary="New app commit">
+      <created>1662786110090</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662786110090</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[CHANGE] UI">
+      <created>1663571605242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663571605242</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Complete App" />
+    <MESSAGE value="New app commit" />
+    <MESSAGE value="[CHANGE] UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="[CHANGE] UI" />
+  </component>
+</project>

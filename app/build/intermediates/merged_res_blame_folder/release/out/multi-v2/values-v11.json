@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.Example.calligrapy.app-mergeReleaseResources-40:/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\jemis\\.gradle\\caches\\transforms-3\\eaf31105d243cf2c05b3ee2918cb5a6d\\transformed\\jetified-cropper-1.0.1\\res\\values-v11\\values.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "162",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "294"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "138"
+                    }
+                }
+            ]
+        }
+    ]
+}

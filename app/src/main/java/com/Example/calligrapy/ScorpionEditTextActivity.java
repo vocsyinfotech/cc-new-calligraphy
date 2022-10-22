@@ -69,9 +69,7 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
 
         this.fontgrid.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapterView, View arg1, int arg2, long arg3) {
-                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionEditTextActivity.this, new CustomAdsListener() {
-                    @Override
-                    public void onFinish() {
+
 
                         if (!ScorpionUtils.arr.contains(arg2 + BuildConfig.FLAVOR)) {
                             ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
@@ -85,8 +83,7 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
                             ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
                         }
                         ScorpionEditTextActivity.this.cnt_pos = arg2;
-                    }
-                });
+
 
             }
         });

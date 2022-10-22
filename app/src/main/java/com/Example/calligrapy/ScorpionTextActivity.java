@@ -53,6 +53,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 
+import vocsy.ads.AppUtil;
 import vocsy.ads.CustomAdsListener;
 import vocsy.ads.GoogleAds;
 
@@ -499,14 +500,15 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
             public void onClick(View arg0) {
 
                 ScorpionTextActivity.this.pwindow.dismiss();
-                try {
-                    try {
-                        ScorpionTextActivity.this.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("http://play.google.com/store/apps/details?id=" + ScorpionTextActivity.this.getApplicationContext().getPackageName())));
-                    } catch (ActivityNotFoundException e) {
-                        ScorpionTextActivity.this.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("http://play.google.com/store/apps/details?id=" + ScorpionTextActivity.this.getApplicationContext().getPackageName())));
-                    }
-                } catch (Exception e2) {
-                }
+                AppUtil.rateApp(ScorpionTextActivity.this);
+//                try {
+//                    try {
+//                        ScorpionTextActivity.this.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("http://play.google.com/store/apps/details?id=" + ScorpionTextActivity.this.getApplicationContext().getPackageName())));
+//                    } catch (ActivityNotFoundException e) {
+//                        ScorpionTextActivity.this.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("http://play.google.com/store/apps/details?id=" + ScorpionTextActivity.this.getApplicationContext().getPackageName())));
+//                    }
+//                } catch (Exception e2) {
+//                }
 
 
             }
@@ -527,15 +529,15 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
         });
         llsharelink.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
-
-                try {
-                    Intent i = new Intent("android.intent.action.SEND");
-                    i.setType(StringBody.CONTENT_TYPE);
-                    i.putExtra("android.intent.extra.SUBJECT", ScorpionTextActivity.this.getResources().getString(R.string.app_name));
-                    i.putExtra("android.intent.extra.TEXT", ScorpionTextActivity.this.getResources().getString(R.string.sharemsg) + "https://play.google.com/store/apps/details?id=" + ScorpionTextActivity.this.getApplicationContext().getPackageName() + " \n\n");
-                    ScorpionTextActivity.this.startActivity(Intent.createChooser(i, "Choose one"));
-                } catch (Exception e) {
-                }
+                AppUtil.shareApp(ScorpionTextActivity.this);
+//                try {
+//                    Intent i = new Intent("android.intent.action.SEND");
+//                    i.setType(StringBody.CONTENT_TYPE);
+//                    i.putExtra("android.intent.extra.SUBJECT", ScorpionTextActivity.this.getResources().getString(R.string.app_name));
+//                    i.putExtra("android.intent.extra.TEXT", ScorpionTextActivity.this.getResources().getString(R.string.sharemsg) + "https://play.google.com/store/apps/details?id=" + ScorpionTextActivity.this.getApplicationContext().getPackageName() + " \n\n");
+//                    ScorpionTextActivity.this.startActivity(Intent.createChooser(i, "Choose one"));
+//                } catch (Exception e) {
+//                }
 
 
             }

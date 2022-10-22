@@ -100,7 +100,7 @@ public class ScorpionMainActivity extends AppCompatActivity {
         SystemConfiguration.setStatusBarColor(this, R.color.backgroundcolor);
         setContentView(R.layout.activity_main);
 
-        GoogleAds.getInstance().addBigNativeView(this, findViewById(R.id.nativeLay));
+        GoogleAds.getInstance().addNativeView(this, findViewById(R.id.nativeLay));
 
         this.create_new = (LinearLayout) findViewById(R.id.create_new);
         this.create_new.setOnClickListener(arg0 -> {
