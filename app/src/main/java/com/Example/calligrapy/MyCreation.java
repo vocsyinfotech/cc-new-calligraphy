@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.io.File;
 import java.util.ArrayList;
 
+import vocsy.ads.GoogleAds;
+
 public class MyCreation extends Activity {
     private ImageButton btn_back;
     private ArrayList<String> fileArraylist = new ArrayList();
@@ -24,6 +26,8 @@ public class MyCreation extends Activity {
         super.onCreate(savedInstanceState);
         SystemConfiguration.setStatusBarColor(this, R.color.appTheme, true);
         setContentView(R.layout.activity_my_creation);
+
+        GoogleAds.getInstance().admobBanner(this, findViewById(R.id.nativeLay));
 
         recyclerView = findViewById(R.id.recyclerView);
         this.btn_back = (ImageButton) findViewById(R.id.btn_back_image);

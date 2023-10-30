@@ -14,6 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import vocsy.ads.CustomAdsListener;
+import vocsy.ads.GoogleAds;
+
 public class ScorpionMainActivity extends AppCompatActivity {
     private int PERMISSION_REQUEST_CODE = 101;
 
@@ -22,21 +25,33 @@ public class ScorpionMainActivity extends AppCompatActivity {
         SystemConfiguration.setTransparentStatusBar(this, SystemConfiguration.IconColor.ICON_DARK);
         setContentView(R.layout.activity_main);
 
+        GoogleAds.getInstance().addNativeView(this, findViewById(R.id.nativeLay));
+
         findViewById(R.id.create_new).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ScorpionMainActivity.this, CalligraphyMainActivity.class));
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionMainActivity.this, new CustomAdsListener() {
+                    @Override
+                    public void onFinish() {
+                        startActivity(new Intent(ScorpionMainActivity.this, CalligraphyMainActivity.class));
+                    }
+                });
             }
         });
 
         findViewById(R.id.your_creation).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (checkPermission()) {
-                    startActivity(new Intent(ScorpionMainActivity.this, MyCreation.class));
-                } else {
-                    requestPermission();
-                }
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionMainActivity.this, new CustomAdsListener() {
+                    @Override
+                    public void onFinish() {
+                        if (checkPermission()) {
+                            startActivity(new Intent(ScorpionMainActivity.this, MyCreation.class));
+                        } else {
+                            requestPermission();
+                        }
+                    }
+                });
             }
         });
     }

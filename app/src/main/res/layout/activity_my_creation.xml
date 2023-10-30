@@ -34,6 +34,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/nativeLay"
         android:layout_below="@+id/tool_bar"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -45,4 +46,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nativeLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="2dp"
+        android:orientation="vertical" />
 </RelativeLayout>

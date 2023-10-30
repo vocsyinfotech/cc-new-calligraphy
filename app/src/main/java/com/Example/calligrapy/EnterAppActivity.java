@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import vocsy.ads.AppUtil;
 import vocsy.ads.ExitScreen;
+import vocsy.ads.GoogleAds;
 
 
 public class EnterAppActivity extends AppCompatActivity {
@@ -16,6 +17,8 @@ public class EnterAppActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         SystemConfiguration.setTransparentStatusBar(this, SystemConfiguration.IconColor.ICON_DARK);
         setContentView(R.layout.activity_enter_app);
+
+        GoogleAds.getInstance().admobBanner(this, findViewById(R.id.nativeLay));
 
         findViewById(R.id.btnGetStarted).setOnClickListener(view -> startActivity(new Intent(EnterAppActivity.this, ScorpionMainActivity.class)));
 

@@ -3,8 +3,5 @@
     android:id="@+id/ad_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/native_ads_out_line"
     android:orientation="vertical"
-    android:padding="10dp">
-
-</LinearLayout>
+    android:padding="10dp" />

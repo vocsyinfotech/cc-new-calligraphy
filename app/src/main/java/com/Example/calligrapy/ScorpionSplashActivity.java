@@ -34,7 +34,7 @@ public class ScorpionSplashActivity extends Activity {
             // admob init Success
         }).execute();
 
-        AdsHandler.setAdsOn(false);
+        AdsHandler.setAdsOn(true);
 
         new Handler().postDelayed(new Runnable() {
             @Override

@@ -21,6 +21,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
 
+import vocsy.ads.GoogleAds;
+
 public class CalligraphyMainActivity extends AppCompatActivity {
     private int CAMERA_PERMISSION_REQUEST_CODE = 101;
     private int GALLERY_PERMISSION_REQUEST_CODE = 102;
@@ -31,6 +33,8 @@ public class CalligraphyMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         SystemConfiguration.setStatusBarColor(this, R.color.appTheme, true);
         setContentView(R.layout.activity_calligraphy_main);
+
+        GoogleAds.getInstance().addNativeView(this, findViewById(R.id.nativeLay));
 
         findViewById(R.id.btnBack).setOnClickListener(view -> onBackPressed());
 

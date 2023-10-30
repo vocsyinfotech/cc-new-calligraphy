@@ -882,15 +882,17 @@ public class ScorpionTextActivity extends AppCompatActivity implements OnClickLi
         llsave.setOnClickListener(new OnClickListener() {
             @SuppressLint({"NewApi"})
             public void onClick(View arg0) {
-
-                if (ScorpionTextActivity.this.isUpHoneycomb) {
-                    new MySaveImage().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-                } else {
-                    new MySaveImage().execute();
-                }
-                ScorpionTextActivity.this.pwindow.dismiss();
-
-
+                GoogleAds.getInstance().showCounterInterstitialAd(ScorpionTextActivity.this, new CustomAdsListener() {
+                    @Override
+                    public void onFinish() {
+                        if (ScorpionTextActivity.this.isUpHoneycomb) {
+                            new MySaveImage().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                        } else {
+                            new MySaveImage().execute();
+                        }
+                        ScorpionTextActivity.this.pwindow.dismiss();
+                    }
+                });
             }
         });
         llsharelink.setOnClickListener(new OnClickListener() {
