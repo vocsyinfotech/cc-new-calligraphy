@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calligrapy</string>
+    <string name="app_name">Calligraphy</string>
 
     <string name="bnr_admob" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="native_admob" translatable="false">/6499/example/native</string>
@@ -17,6 +17,4 @@
     <string name="title_activity_edit_text">EditTextActivity</string>
     <string name="title_activity_text">TextActivity</string>
     <string name="sharemsg">\n Hey Frnds Download this app for writing calligraphy...\n\n</string>
-
-
 </resources>

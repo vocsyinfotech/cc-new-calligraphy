@@ -1,5 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/dot_unpress" />
-    <item android:state_pressed="false" android:drawable="@drawable/dot_unpress" />
-</selector>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="30dp"
+    android:viewportWidth="24"
+    android:viewportHeight="30">
+  <path
+      android:pathData="M11.111,0l11.111,11.539l-11.111,11.539l-11.111,-11.539z"
+      android:fillColor="#C8C8C8"/>
+  <path
+      android:strokeWidth="1"
+      android:pathData="M12.889,7.643L23.306,18.461L12.889,29.28L2.472,18.461L12.889,7.643Z"
+      android:fillColor="#C8C8C8"
+      android:strokeColor="#ffffff"/>
+</vector>

@@ -1,4 +1,0 @@
-#Sat Oct 22 11:39:34 IST 2022
-base.0=D\:\\CC APP\\CC's app\\New Callygraphy\\Calligrapy\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

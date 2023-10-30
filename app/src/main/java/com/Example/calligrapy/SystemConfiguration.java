@@ -177,9 +177,8 @@ public class SystemConfiguration {
     /**
      * for set StatusBar Color
      **/
-    public static void setStatusBarColor(Activity activity, int colorResId) {
+    public static void setStatusBarColor(Activity activity, int colorResId, boolean isLightIcon) {
         //if color is dark then set icon white...
-        boolean isLightIcon = isColorDark(colorResId);
         setStatusColor(activity, colorResId);
         changeStatusContrastStyle(activity.getWindow(), isLightIcon);
     }

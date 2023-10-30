@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Calligrapy.iml" filepath="$PROJECT_DIR$/.idea/modules/Calligrapy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Calligrapy.ads.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Calligrapy.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cc-new-calligraphy.iml" filepath="$PROJECT_DIR$/.idea/modules/cc-new-calligraphy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.unitTest.iml" />
     </modules>
   </component>
 </project>

@@ -1,7 +1,6 @@
 package com.Example.calligrapy;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -10,15 +9,8 @@ import android.widget.ImageButton;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
-
 import java.io.File;
 import java.util.ArrayList;
-
-import vocsy.ads.GoogleAds;
 
 public class MyCreation extends Activity {
     private ImageButton btn_back;
@@ -30,10 +22,8 @@ public class MyCreation extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SystemConfiguration.setStatusBarColor(this, R.color.black);
+        SystemConfiguration.setStatusBarColor(this, R.color.appTheme, true);
         setContentView(R.layout.activity_my_creation);
-
-        GoogleAds.getInstance().admobBanner(this, findViewById(R.id.nativeLay));
 
         recyclerView = findViewById(R.id.recyclerView);
         this.btn_back = (ImageButton) findViewById(R.id.btn_back_image);

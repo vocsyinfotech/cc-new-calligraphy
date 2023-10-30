@@ -3,23 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splasbgg">
+    android:background="@color/white">
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:layout_alignParentLeft="true"
+        android:layout_height="65dp"
         android:layout_alignParentTop="true"
-        android:background="@color/themecolor">
+        android:background="@color/appTheme">
 
         <ImageView
             android:id="@+id/btn_back"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="16dp"
             android:background="@drawable/ic_backk" />
 
         <TextView
@@ -27,160 +26,205 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/text"
+            android:fontFamily="@font/jost_regular"
             android:text="Calligraphy Image"
             android:textColor="@color/textcolor"
-            android:textSize="18dp" />
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/btn_more"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentRight="true"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/ic_dossss" />
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_menu" />
     </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:layout_above="@id/ll_bottom"
+        android:background="#D9D9D9" />
 
     <RelativeLayout
         android:id="@+id/ll_bottom"
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:layout_above="@+id/banner"
-        android:background="@color/themecolor">
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
 
-        <HorizontalScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:scrollbars="horizontal">
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_gallary"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/image_gallery"
+                android:backgroundTint="@color/white"
+                android:visibility="gone" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/layout1"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_centerInParent="true">
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
 
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF"
-                    android:visibility="gone" />
-
-                <ImageView
-                    android:id="@+id/btn_gallary"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                <RelativeLayout
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/image_gallery"
-                    android:backgroundTint="@color/white"
-                    android:visibility="gone" />
+                    android:gravity="center">
 
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF" />
-
-                <ImageView
-                    android:id="@+id/btn_text"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:src="@drawable/ic_fonttt" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF" />
-
-                <ImageView
-                    android:id="@+id/btn_bg"
-                    android:layout_width="30dp"
-                    android:layout_height="26dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/ic_backgrounddd" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF" />
-
-                <ImageView
-                    android:id="@+id/btn_gradiant"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/ic_fill_colorr" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF" />
-
-                <ImageView
-                    android:id="@+id/btn_bg_clr"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/ic_themeee" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF" />
-
-                <ImageView
-                    android:id="@+id/btn_symbole"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/ic_gender_symbols" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF" />
-
-                <ImageView
-                    android:id="@+id/btn_symbole_clr"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/ic_color_pickerr" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF" />
-
-                <ImageView
-                    android:id="@+id/btn_save"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/ic_save" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#80FFFFFF" />
+                    <ImageView
+                        android:id="@+id/btn_text"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_fonttt" />
+                </RelativeLayout>
             </LinearLayout>
-        </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_bg"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_backgrounddd" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_gradiant"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_fill_colorr" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_bg_clr"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_themeee" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_symbole"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_gender_symbols" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_symbole_clr"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_color_pickerr" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_save"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/ic_save"
+                android:visibility="gone" />
+        </LinearLayout>
     </RelativeLayout>
 
     <RelativeLayout
@@ -188,14 +232,6 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/ll_bottom"
         android:layout_below="@+id/relativeLayout1">
-
-        <RelativeLayout
-            android:id="@+id/rl_adview"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:layout_alignParentTop="true">
-
-        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rl_hlv"
@@ -206,8 +242,9 @@
             <com.Example.calligrapy.HorizontalListView
                 android:id="@+id/hlvSimpleList1"
                 android:layout_width="match_parent"
-
                 android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"
                 app:dividerWidth="3dp" />
         </RelativeLayout>
 
@@ -216,48 +253,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/rl_hlv"
-            android:layout_below="@+id/rl_adview"
+            android:layout_alignParentTop="true"
             android:padding="5dp">
 
-            <androidx.cardview.widget.CardView
+            <FrameLayout
+                android:id="@+id/frm"
                 android:layout_width="match_parent"
-                android:layout_height="360dp"
-                app:cardElevation="8dp"
-                app:cardUseCompatPadding="true">
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
 
-                <FrameLayout
-                    android:id="@+id/frm"
+                <com.Example.calligrapy.StickerView
+                    android:id="@+id/sticker_view"
                     android:layout_width="match_parent"
-                    android:layout_height="360dp"
-                    android:layout_centerInParent="true">
-
-                    <com.Example.calligrapy.StickerView
-                        android:id="@+id/sticker_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:scaleType="fitXY" />
-                </FrameLayout>
-
-            </androidx.cardview.widget.CardView>
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
         </RelativeLayout>
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/banner"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/splasbgg"
-        android:visibility="visible">
-
-        <LinearLayout
-            android:id="@+id/nativeLay"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal" />
     </RelativeLayout>
 </RelativeLayout>

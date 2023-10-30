@@ -27,8 +27,6 @@ import java.util.Arrays;
 import java.util.regex.Pattern;
 
 import me.grantland.widget.BuildConfig;
-import vocsy.ads.CustomAdsListener;
-import vocsy.ads.GoogleAds;
 
 public class ScorpionEditTextActivity extends Activity implements OnClickListener {
 
@@ -43,7 +41,7 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
     String[] fontname;
     TextView output_autofit;
     Typeface typeface;
-
+    String[] tattooName;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,29 +64,25 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
         this.adpt = new ScorpionCustomeFontAdapter(this, new ArrayList(Arrays.asList(this.fontname)));
         this.fontgrid.setAdapter(this.adpt);
 
-
         this.fontgrid.setOnItemClickListener(new OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapterView, View arg1, int arg2, long arg3) {
-
-
-                        if (!ScorpionUtils.arr.contains(arg2 + BuildConfig.FLAVOR)) {
-                            ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
-                            ScorpionEditTextActivity.this.typeface = Typeface.createFromAsset(ScorpionEditTextActivity.this.getAssets(), "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2]);
-                            ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
-                        } else if (Pattern.compile("([0-9])").matcher(ScorpionEditTextActivity.this.edittext.getText().toString()).find()) {
-                            Toast.makeText(ScorpionEditTextActivity.this.getApplicationContext(), "Please Select another font style!!!", Toast.LENGTH_LONG).show();
-                        } else {
-                            ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
-                            ScorpionEditTextActivity.this.typeface = Typeface.createFromAsset(ScorpionEditTextActivity.this.getAssets(), "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2]);
-                            ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
-                        }
-                        ScorpionEditTextActivity.this.cnt_pos = arg2;
-
-
+                if (!ScorpionUtils.arr.contains(arg2 + BuildConfig.FLAVOR)) {
+                    ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
+                    ScorpionEditTextActivity.this.typeface = Typeface.createFromAsset(ScorpionEditTextActivity.this.getAssets(), "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2]);
+                    ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
+                } else if (Pattern.compile("([0-9])").matcher(ScorpionEditTextActivity.this.edittext.getText().toString()).find()) {
+                    Toast.makeText(ScorpionEditTextActivity.this.getApplicationContext(), "Please Select another font style!!!", Toast.LENGTH_LONG).show();
+                } else {
+                    ScorpionUtils.typeface = "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2];
+                    ScorpionEditTextActivity.this.typeface = Typeface.createFromAsset(ScorpionEditTextActivity.this.getAssets(), "fontfile/" + ScorpionEditTextActivity.this.fontname[arg2]);
+                    ScorpionEditTextActivity.this.output_autofit.setTypeface(ScorpionEditTextActivity.this.typeface);
+                }
+                ScorpionEditTextActivity.this.cnt_pos = arg2;
             }
         });
         this.edittext.addTextChangedListener(new TextWatcher() {
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
             }
 
             public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
@@ -102,6 +96,7 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
             }
 
             public void afterTextChanged(Editable editable) {
+
             }
         });
         this.btn_back.setOnClickListener(this);
@@ -128,37 +123,32 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
         switch (arg0.getId()) {
             case R.id.btn_next /*2131427437*/:
 
-                        if (edittext.getText().toString().length() > 0) {
-                            ScorpionUtils.text = output_autofit.getText().toString();
-                            setResult(-1);
-                            onBackPressed();
-                            return;
-                        }
-                        Toast.makeText(getApplicationContext(), "Please Enter Text!", Toast.LENGTH_LONG).show();
-
+                if (edittext.getText().toString().length() > 0) {
+                    ScorpionUtils.text = output_autofit.getText().toString();
+                    setResult(-1);
+                    onBackPressed();
+                    return;
+                }
+                Toast.makeText(getApplicationContext(), "Please Enter Text!", Toast.LENGTH_LONG).show();
 
 
                 return;
             case R.id.btn_back /*2131427456*/:
 
-                        onBackPressed();
-
-
+                onBackPressed();
 
 
                 return;
             case R.id.btn_ok /*2131427480*/:
 
-                        output_autofit.setText(edittext.getText().toString());
-                        ((InputMethodManager) getSystemService(INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(edittext.getWindowToken(), 0);
-
+                output_autofit.setText(edittext.getText().toString());
+                ((InputMethodManager) getSystemService(INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(edittext.getWindowToken(), 0);
 
 
                 return;
             case R.id.btn_clr /*2131427481*/:
 
-                        openColorDialog();
-
+                openColorDialog();
 
 
                 return;
@@ -195,9 +185,10 @@ public class ScorpionEditTextActivity extends Activity implements OnClickListene
             }
         }).showColorEdit(true).setColorEditTextColor(getResources().getColor(17170459)).build().show();
     }
+
     public void onBackPressed() {
 
-                finish();
+        finish();
 
     }
 

@@ -18,6 +18,7 @@ public class ScorpionSplashActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SystemConfiguration.setTransparentStatusBar(this, SystemConfiguration.IconColor.ICON_DARK);
         setContentView(R.layout.activity_splash);
 
 
@@ -33,16 +34,14 @@ public class ScorpionSplashActivity extends Activity {
             // admob init Success
         }).execute();
 
-        AdsHandler.setAdsOn(true);
+        AdsHandler.setAdsOn(false);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(ScorpionSplashActivity.this, GetStartActivity.class));
+                startActivity(new Intent(ScorpionSplashActivity.this, EnterAppActivity.class));
                 finish();
             }
         }, 1500);
     }
-
-
 }

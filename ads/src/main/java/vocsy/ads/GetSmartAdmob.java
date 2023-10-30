@@ -41,8 +41,10 @@ public class GetSmartAdmob extends AsyncTask<Void, Void, Boolean> {
     @Override
     protected void onPostExecute(Boolean success) {
 
-        if (AdsHandler.openAds != null && !AdsHandler.openAds.isEmpty() && !AdsHandler.openAds.equals("0")) {
-            AdsApplication.appOpenManager = new AppOpenManager(AdsApplication.getInstance());
+        if (AdsHandler.isAdsOn()) {
+            if (AdsHandler.openAds != null && !AdsHandler.openAds.isEmpty() && !AdsHandler.openAds.equals("0")) {
+                AdsApplication.appOpenManager = new AppOpenManager(AdsApplication.getInstance());
+            }
         }
 
         listener.onFinish(success);

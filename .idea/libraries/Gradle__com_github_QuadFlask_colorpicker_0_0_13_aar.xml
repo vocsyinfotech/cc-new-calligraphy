@@ -1,15 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.QuadFlask:colorpicker:0.0.13@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/46749fdcfc3022c42286e7524700b803/transformed/jetified-colorpicker-0.0.13/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/46749fdcfc3022c42286e7524700b803/transformed/jetified-colorpicker-0.0.13/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/46749fdcfc3022c42286e7524700b803/transformed/jetified-colorpicker-0.0.13/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/487435e27c97dcd473c181f1e70b3fca/transformed/jetified-colorpicker-0.0.13/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/487435e27c97dcd473c181f1e70b3fca/transformed/jetified-colorpicker-0.0.13/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/487435e27c97dcd473c181f1e70b3fca/transformed/jetified-colorpicker-0.0.13/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c40dcbf8c7cb56057989e6722cf4d6ac/transformed/jetified-colorpicker-0.0.13/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c40dcbf8c7cb56057989e6722cf4d6ac/transformed/jetified-colorpicker-0.0.13/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c40dcbf8c7cb56057989e6722cf4d6ac/transformed/jetified-colorpicker-0.0.13/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e27cd9e25c8ffec6df3a438d016d56b9/transformed/jetified-colorpicker-0.0.13/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e27cd9e25c8ffec6df3a438d016d56b9/transformed/jetified-colorpicker-0.0.13/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e27cd9e25c8ffec6df3a438d016d56b9/transformed/jetified-colorpicker-0.0.13/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
