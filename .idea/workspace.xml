@@ -17,42 +17,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9edead14-5b6f-49e8-a3f7-c7e83305ed92" name="Default Changelist" comment="[CHANGE] UI">
-      <change afterPath="$PROJECT_DIR$/ads/src/main/res/font/jost_italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ads/src/main/res/font/jost_medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ads/src/main/res/font/jost_regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ads/src/main/res/font/jost_semi_bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/app_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ads/cc-new-calligraphy.ads.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/cc-new-calligraphy.app.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads/src/main/java/vocsy/ads/ExitScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/ads/src/main/java/vocsy/ads/ExitScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads/src/main/res/layout/ad_unified.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ads/src/main/res/layout/ad_unified.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads/src/main/res/layout/big_ad_unified.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ads/src/main/res/layout/big_ad_unified.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads/src/main/res/layout/exit_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ads/src/main/res/layout/exit_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads/src/main/res/layout/item_google_native_ad_outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ads/src/main/res/layout/item_google_native_ad_outline.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ads/src/main/res/layout/small_ad_unified.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ads/src/main/res/layout/small_ad_unified.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/CalligraphyMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/CalligraphyMainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/EnterAppActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/EnterAppActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/MyCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/MyCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionMainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionSplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionSplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionTextActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/Example/calligrapy/ScorpionTextActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calligraphy_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calligraphy_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_enter_app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_enter_app.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_creation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_creation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/pop_window.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pop_window.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9edead14-5b6f-49e8-a3f7-c7e83305ed92" name="Default Changelist" comment="Latest UI Changed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,8 +41,8 @@
     </option>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="D:\Keys\envoto.jks" />
-    <option name="KEY_ALIAS" value="envoto" />
+    <option name="KEY_STORE_PATH" value="E:\KeyStore\vocsy app\vocsyapp.jks" />
+    <option name="KEY_ALIAS" value="vocsyapp" />
     <option name="REMEMBER_PASSWORDS" value="true" />
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
@@ -105,13 +70,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ApkExportedModule": "cc-new-calligraphy.app",
+    "ExportApk.ApkPathForcc-new-calligraphy.app": "G:\\New Updated 2023\\cc-new-calligraphy\\code\\cc-new-calligraphy\\apks\\apk",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "android-custom-viewG:/New Updated 2023/cc-new-calligraphy/code/cc-new-calligraphy/app/src/main/java/com/Example/calligrapy/NonScrollListView.java_SELECTED": "NonScrollListView",
     "cidr.known.project.marker": "true",
     "last_directory_selection": "G:/New Updated 2023/cc-new-calligraphy/code/cc-new-calligraphy/app/src/main/res/drawable",
-    "last_opened_file_path": "G:/New Updated 2023/cc-new-calligraphy/code/cc-new-calligraphy/ads/src/main/res"
+    "last_opened_file_path": "E:/KeyStore/vocsy app/vocsyapp.jks"
+  },
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -265,7 +237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698642121252</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Latest UI Changed">
+      <created>1698645840653</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698645840653</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Latest UI Changed">
+      <created>1698645907807</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698645907807</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +272,7 @@
     <MESSAGE value="Complete App" />
     <MESSAGE value="New app commit" />
     <MESSAGE value="[CHANGE] UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="[CHANGE] UI" />
+    <MESSAGE value="Latest UI Changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Latest UI Changed" />
   </component>
 </project>
